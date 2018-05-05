@@ -1,15 +1,17 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div class="home">
+    hello world
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'Home'
 }
 </script>
 
 <style>
-
+  .home{
+    font-size: 50px;
+  }
 </style>
