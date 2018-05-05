@@ -7,9 +7,12 @@ import router from './router'
 // for the click delay on mobile device
 import fastClick from 'fastClick'
 
-// import css
-import './assets/styles/reset.css'
-import './assets/styles/border.css'
+// reset css
+import 'styles/reset.css'
+import 'styles/border.css'
+
+// iconfont
+import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
 
