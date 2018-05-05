@@ -4,6 +4,10 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// import VueAwesomeSwiper
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+
 // for the click delay on mobile device
 import fastClick from 'fastClick'
 
@@ -15,6 +19,8 @@ import 'styles/border.css'
 import 'styles/iconfont.css'
 
 Vue.config.productionTip = false
+
+Vue.use(VueAwesomeSwiper)
 
 fastClick.attach(document.body)
 

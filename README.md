@@ -1,5 +1,7 @@
 # travel-web-app
 
+## slideshow on index
+vue-awesome-swiper
 
 
 > A Vue.js project
