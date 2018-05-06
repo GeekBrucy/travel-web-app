@@ -4,7 +4,7 @@
     <ul>
       <li
       class="item border-bottom"
-      v-for="item of recommendList"
+      v-for="item of list"
       :key="item.id">
         <img class="item-img" :src="item.imgUrl">
         <div class="item-info">
@@ -19,31 +19,10 @@
 
 <script>
 export default {
-  name: 'HomeRecommend',
-  data () {
-    return {
-      recommendList: [
-        {
-          id: '0001',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1804/c8/c88bb5e69c9a9c5ea3.img.jpg_200x200_740720ff.jpg',
-          title: '北京赏花好地方',
-          desc: '乱花渐欲迷人眼，京城赏花大搜索'
-        },
-        {
-          id: '0002',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1508/2f/e615bc3c8e0cf46d9fb92c58ac305f45.water.jpg_200x200_e4e69a48.jpg',
-          title: '世界公园',
-          desc: '数百年的宫廷庙宇，至今依旧威严霸气'
-        },
-        {
-          id: '0003',
-          imgUrl: 'http://img1.qunarzz.com/sight/p0/1507/14/77271e0d50733ea9d4b3b1534f813d4c.water.jpg_200x200_e6109e17.jpg',
-          title: '桃园仙谷',
-          desc: '周末干嘛？北京很多博物馆已经免费开放啦'
-        }
-      ]
-    }
-  }
+  props: {
+    list: Array
+  },
+  name: 'HomeRecommend'
 }
 </script>
 
