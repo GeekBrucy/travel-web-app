@@ -13,10 +13,5 @@ export default new Vuex.Store({
       ctx.commit('changeCity', city)
     }
   },
-  mutations: mutations,
-  getters: {
-    doubleCity (state) {
-      return state.city + ' ' + state.city
-    }
-  }
+  mutations: mutations
 })

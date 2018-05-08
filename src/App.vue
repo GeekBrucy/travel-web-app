@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <router-view/>
+    <!-- to improve performance -->
+    <!-- prevent keep sending http request -->
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
