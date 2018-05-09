@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// babel
+import 'babel-polyfill'
+
 // Vuex
 import store from './store'
 
